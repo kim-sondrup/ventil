@@ -1,0 +1,39 @@
+# editorconfig.org
+
+# This is the project's root directory
+root = true
+
+[*]
+# Use spaces for indentation
+indent_style = space
+# Each indent should contain 2 spaces
+indent_size = 2
+# Use Unix line endings
+end_of_line = lf
+# The files are utf-8 encoded
+charset = utf-8
+# No whitespace at the end of line
+trim_trailing_whitespace = true
+# A file must end with an empty line - this is good for version control systems
+insert_final_newline = true
+
+[{Makefile,**.mk,go.mod,go.sum,*.go}]
+indent_style = tab
+indent_size = 4
+
+[**.{md,Rmd,rst}]
+trim_trailing_whitespace = false
+indent_style = space
+indent_size = 2
+
+[**.{js,json,y{a,}ml,html,cwl}]
+indent_style = space
+indent_size = 2
+
+[.git*]
+indent_size = 4
+indent_style = tab
+
+[{**.*sh,test/run,**.bats}]
+indent_size = 4
+indent_style = tab
